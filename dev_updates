@@ -1,0 +1,2 @@
+NULL vs emptystring in db mysql
+Readability wise NULL seems disturbing and highlevel logic can eliminate any pitfalls of using empty string
