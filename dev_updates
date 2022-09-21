@@ -9,3 +9,4 @@ Hi,I have problem with entering data into a sql database from php webpage. Howev
 The simple way is to use a token which can be used only once.
 When you generate the page, you put in a hidden form field containing some random number. The number is submitted along with the rest of the form. You store that number somewhere. If you get another request you check to see if the number is not the same as any of the ones you recently received.
 That way you prevent double entry of the data. 
+ 
