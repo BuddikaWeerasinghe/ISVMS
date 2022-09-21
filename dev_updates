@@ -2,3 +2,10 @@ NULL vs emptystring in db mysql
 Readability wise NULL seems disturbing and highlevel logic can eliminate any pitfalls of using empty string
 
 limited column insert requires default value in table
+
+**Page Refresh form data send again**
+Hi,I have problem with entering data into a sql database from php webpage. However I'm doing everything in one page. Is there any way to stop the resending of the query on refresh or do I have to use more than one webpage to get around this. I'm very new at this and am a little intimidated by multiple webpages.
+
+The simple way is to use a token which can be used only once.
+When you generate the page, you put in a hidden form field containing some random number. The number is submitted along with the rest of the form. You store that number somewhere. If you get another request you check to see if the number is not the same as any of the ones you recently received.
+That way you prevent double entry of the data. 
